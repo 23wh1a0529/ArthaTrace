@@ -1,0 +1,58 @@
+ledger_id,txn_ref,amount,txn_date,counterparty,category,true_case
+LGR-0042,RZP26000045,81685.82,2026-08-04,Nimbus Traders,refund,exact
+LGR-0033,RZP26000035,62034.05,2026-08-26,Nimbus Traders,refund,timezone_shift
+LGR-0057,RZP26000061,28685.53,2026-08-01,BlueDart Logistics,payout,split_payment
+LGR-0040,RZP26000042,36244.13,2026-08-19,Vega Software Solutions,refund,exact
+LGR-0015,RZP26000016,57983.95,2026-08-01,Nimbus Traders,payout,duplicate_ref
+LGR-0019,RZP26000020,46077.53,2026-08-11,Acme Retail Pvt Ltd,payout,exact
+LGR-0047,RZP26000050,57257.82,2026-08-09,Orbit Foods,refund,partial_refund
+LGR-0032,RZP26000034,73494.21,2026-08-30,Acme Retail Pvt Ltd,payment_in,date_drift
+LGR-0002,RZP26000002,56376.75,2026-08-03,Orbit Foods,payment_in,exact
+LGR-0043,RZP26000046,50780.47,2026-08-05,Sundaram Textiles,fee,date_drift
+LGR-0030,RZP26000031,11680.35,2026-09-04,Vega Software Solutions,refund,exact
+LGR-0004,RZP26000004,54215.34,2026-08-30,Kaveri Electronics,refund,exact
+LGR-0031,RZP26000032,68733.5,2026-08-31,Sundaram Textiles,payment_in,date_drift
+LGR-0017,RZP26000018,38839.65,2026-08-11,Orbit Foods,refund,exact
+LGR-0013,RZP26000014,67430.71,2026-08-11,Prime Consulting LLP,payment_in,timezone_shift
+LGR-0026,RZP26000027,5910.19,2026-08-15,Acme Retail Pvt Ltd,refund,exact
+LGR-0011,RZP26000012,34249.34,2026-09-07,Sundaram Textiles,refund,rounding_noise
+LGR-0021,RZP26000022,20853.65,2026-08-04,Nimbus Traders,payment_in,exact
+LGR-0052,RZP26000056,75680.72,2026-08-08,BlueDart Logistics,payout,exact
+LGR-0027,RZP26000028,19108.37,2026-09-07,Nimbus Traders,payment_in,timezone_shift
+LGR-0022,RZP26000023,69453.96,2026-09-01,BlueDart Logistics,refund,split_payment
+LGR-0006,RZP26000006,54155.67,2026-09-08,Sundaram Textiles,refund,exact
+LGR-0051,RZP26000055,9253.06,2026-09-12,BlueDart Logistics,payout,exact
+LGR-0050,RZP26000054,83635.6,2026-09-09,Acme Retail Pvt Ltd,payout,exact
+LGR-0037,RZP26000039,71144.33,2026-09-04,Nimbus Traders,refund,split_payment
+LGR-0044,RZP26000047,21305.2,2026-09-06,Acme Retail Pvt Ltd,payment_in,rounding_noise
+LGR-0034,RZP26000036,16572.65,2026-08-13,Vega Software Solutions,refund,exact
+LGR-0041,RZP26000043,25571.81,2026-08-13,Acme Retail Pvt Ltd,payment_in,timezone_shift
+LGR-0018,RZP26000019,77617.05,2026-09-02,Orbit Foods,refund,partial_refund
+LGR-0025,RZP26000026,76517.39,2026-08-29,Vega Software Solutions,payment_in,date_drift
+LGR-0012,RZP26000013,64363.59,2026-08-06,Nimbus Traders,refund,date_drift
+LGR-0007,RZP26000007,32563.98,2026-08-30,Sundaram Textiles,payout,orphan_ledger
+LGR-0016,RZP26000017,29244.83,2026-09-11,Orbit Foods,fee,exact
+LGR-0014,RZP26000015,32746.83,2026-08-25,Vega Software Solutions,payout,date_drift
+LGR-0023,RZP26000024,14453.23,2026-09-05,Prime Consulting LLP,refund,exact
+LGR-0039,RZP26000041,83758.6,2026-08-01,Orbit Foods,fee,orphan_ledger
+LGR-0049,RZP26000052,79360.42,2026-08-09,Nimbus Traders,refund,exact
+LGR-0020,RZP26000021,2145.78,2026-09-01,Kaveri Electronics,payout,date_drift
+LGR-0055,RZP26000059,77000.93,2026-08-17,Acme Retail Pvt Ltd,payment_in,exact
+LGR-0009,RZP26000010,33930.9,2026-09-01,Vega Software Solutions,refund,exact
+LGR-0054,RZP26000058,54093.11,2026-09-13,Orbit Foods,fee,timezone_shift
+LGR-0048,RZP26000016,1287.16,2026-08-05,Nimbus Traders,payment_in,duplicate_ref
+LGR-0053,RZP26000057,51608.12,2026-08-19,Kaveri Electronics,refund,exact
+LGR-0038,RZP26000040,41174.79,2026-09-01,Prime Consulting LLP,payment_in,rounding_noise
+LGR-0024,RZP26000016,64319.91,2026-09-04,Sundaram Textiles,payout,duplicate_ref
+LGR-0003,RZP26000003,73717.87,2026-08-15,Prime Consulting LLP,payout,orphan_ledger
+LGR-0035,RZP26000037,16004.74,2026-08-28,Vega Software Solutions,refund,rounding_noise
+LGR-0010,RZP26000011,12298.76,2026-08-17,Orbit Foods,fee,exact
+LGR-0045,RZP26000048,48261.68,2026-09-07,Kaveri Electronics,payout,exact
+LGR-0005,RZP26000005,30520.37,2026-08-24,Orbit Foods,payment_in,exact
+LGR-0008,RZP26000009,23124.1,2026-08-26,Sundaram Textiles,payout,rounding_noise
+LGR-0001,RZP26000001,52764.92,2026-09-10,Kaveri Electronics,refund,split_payment
+LGR-0056,RZP26000060,36292.15,2026-09-10,Orbit Foods,payment_in,exact
+LGR-0028,RZP26000029,6195.33,2026-08-15,Acme Retail Pvt Ltd,payout,date_drift
+LGR-0046,RZP26000049,57091.84,2026-08-14,Kaveri Electronics,refund,rounding_noise
+LGR-0036,RZP26000038,37944.55,2026-08-05,Nimbus Traders,refund,partial_refund
+LGR-0029,RZP26000030,20611.39,2026-09-02,Vega Software Solutions,refund,orphan_ledger
