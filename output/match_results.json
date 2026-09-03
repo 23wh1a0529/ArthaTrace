@@ -1,0 +1,668 @@
+{
+  "summary": {
+    "total_ledger_records": 57,
+    "total_bank_records": 61,
+    "matched_count": 50,
+    "unresolved_count": 14,
+    "tier_breakdown": {
+      "split_payment": 4,
+      "exact": 24,
+      "fuzzy": 19,
+      "duplicate_ref_resolved": 3
+    },
+    "internal_accuracy_check": "54/57 (94.7%)"
+  },
+  "results": [
+    {
+      "ledger_id": "LGR-0001",
+      "bank_id": [
+        "BNK-0001",
+        "BNK-0002"
+      ],
+      "ref": "RZP26000001",
+      "status": "matched",
+      "tier": "split_payment",
+      "amount_diff": 0.0,
+      "true_case": "split_payment"
+    },
+    {
+      "ledger_id": "LGR-0002",
+      "bank_id": "BNK-0003",
+      "ref": "RZP26000002",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0003",
+      "bank_id": null,
+      "ref": "RZP26000003",
+      "status": "unresolved",
+      "near_miss_candidate": "BNK-0058",
+      "near_miss_score": 0.05117,
+      "rejection_reason": "no bank record found with matching reference; closest overall bank candidate (BNK-0058) had no reference match at all",
+      "true_case": "orphan_ledger"
+    },
+    {
+      "ledger_id": "LGR-0004",
+      "bank_id": "BNK-0004",
+      "ref": "RZP26000004",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0005",
+      "bank_id": "BNK-0005",
+      "ref": "RZP26000005",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0006",
+      "bank_id": "BNK-0006",
+      "ref": "RZP26000006",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0007",
+      "bank_id": null,
+      "ref": "RZP26000007",
+      "status": "unresolved",
+      "near_miss_candidate": "BNK-0014",
+      "near_miss_score": 0.00393,
+      "rejection_reason": "no bank record found with matching reference; closest overall bank candidate (BNK-0014) had no reference match at all",
+      "true_case": "orphan_ledger"
+    },
+    {
+      "ledger_id": null,
+      "bank_id": "BNK-0007",
+      "ref": "RZP26000008",
+      "status": "unresolved",
+      "near_miss_candidate": "LGR-0021",
+      "near_miss_score": 0.03522,
+      "rejection_reason": "no ledger record found with matching reference; closest overall ledger candidate (LGR-0021) had no reference match at all",
+      "true_case": null
+    },
+    {
+      "ledger_id": "LGR-0008",
+      "bank_id": "BNK-0008",
+      "ref": "RZP26000009",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 1.44,
+      "date_diff_days": 0,
+      "true_case": "rounding_noise"
+    },
+    {
+      "ledger_id": "LGR-0009",
+      "bank_id": "BNK-0009",
+      "ref": "RZP26000010",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0010",
+      "bank_id": "BNK-0010",
+      "ref": "RZP26000011",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0011",
+      "bank_id": "BNK-0011",
+      "ref": "RZP26000012",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.05,
+      "date_diff_days": 0,
+      "true_case": "rounding_noise"
+    },
+    {
+      "ledger_id": "LGR-0012",
+      "bank_id": "BNK-0012",
+      "ref": "RZP26000013",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 6,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": "LGR-0013",
+      "bank_id": "BNK-0013",
+      "ref": "RZP26000014",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "timezone_shift"
+    },
+    {
+      "ledger_id": "LGR-0014",
+      "bank_id": "BNK-0014",
+      "ref": "RZP26000015",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 5,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": "LGR-0015",
+      "bank_id": "BNK-0015",
+      "ref": "RZP26000016",
+      "status": "matched",
+      "tier": "duplicate_ref_resolved",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "collision_flag": "reference 'RZP26000016' shared by 3 ledger entries \u2014 resolved by closest amount+date match, human review recommended",
+      "true_case": "duplicate_ref"
+    },
+    {
+      "ledger_id": "LGR-0048",
+      "bank_id": "BNK-0050",
+      "ref": "RZP26000016",
+      "status": "matched",
+      "tier": "duplicate_ref_resolved",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "collision_flag": "reference 'RZP26000016' shared by 3 ledger entries \u2014 resolved by closest amount+date match, human review recommended",
+      "true_case": "duplicate_ref"
+    },
+    {
+      "ledger_id": "LGR-0024",
+      "bank_id": "BNK-0025",
+      "ref": "RZP26000016",
+      "status": "matched",
+      "tier": "duplicate_ref_resolved",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "collision_flag": "reference 'RZP26000016' shared by 3 ledger entries \u2014 resolved by closest amount+date match, human review recommended",
+      "true_case": "duplicate_ref"
+    },
+    {
+      "ledger_id": "LGR-0016",
+      "bank_id": "BNK-0016",
+      "ref": "RZP26000017",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0017",
+      "bank_id": "BNK-0017",
+      "ref": "RZP26000018",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0018",
+      "bank_id": null,
+      "ref": "RZP26000019",
+      "status": "unresolved",
+      "near_miss_candidate": "BNK-0018",
+      "near_miss_score": 0.37721,
+      "rejection_reason": "amount off by \u20b941,825.06 (53.9%) \u2014 outside tolerance",
+      "true_case": "partial_refund"
+    },
+    {
+      "ledger_id": null,
+      "bank_id": "BNK-0018",
+      "ref": "RZP26000019",
+      "status": "unresolved",
+      "near_miss_candidate": "LGR-0018",
+      "near_miss_score": 0.37721,
+      "rejection_reason": "amount off by \u20b941,825.06 (53.9%) \u2014 outside tolerance",
+      "true_case": null
+    },
+    {
+      "ledger_id": "LGR-0019",
+      "bank_id": "BNK-0019",
+      "ref": "RZP26000020",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0020",
+      "bank_id": "BNK-0020",
+      "ref": "RZP26000021",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 2,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": "LGR-0021",
+      "bank_id": "BNK-0021",
+      "ref": "RZP26000022",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0022",
+      "bank_id": [
+        "BNK-0022",
+        "BNK-0023"
+      ],
+      "ref": "RZP26000023",
+      "status": "matched",
+      "tier": "split_payment",
+      "amount_diff": 0.0,
+      "true_case": "split_payment"
+    },
+    {
+      "ledger_id": "LGR-0023",
+      "bank_id": "BNK-0024",
+      "ref": "RZP26000024",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0025",
+      "bank_id": "BNK-0026",
+      "ref": "RZP26000026",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 2,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": "LGR-0026",
+      "bank_id": "BNK-0027",
+      "ref": "RZP26000027",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0027",
+      "bank_id": "BNK-0028",
+      "ref": "RZP26000028",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "timezone_shift"
+    },
+    {
+      "ledger_id": "LGR-0028",
+      "bank_id": "BNK-0029",
+      "ref": "RZP26000029",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": "LGR-0029",
+      "bank_id": null,
+      "ref": "RZP26000030",
+      "status": "unresolved",
+      "near_miss_candidate": "BNK-0046",
+      "near_miss_score": 0.06355,
+      "rejection_reason": "no bank record found with matching reference; closest overall bank candidate (BNK-0046) had no reference match at all",
+      "true_case": "orphan_ledger"
+    },
+    {
+      "ledger_id": "LGR-0030",
+      "bank_id": "BNK-0030",
+      "ref": "RZP26000031",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0031",
+      "bank_id": "BNK-0031",
+      "ref": "RZP26000032",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": null,
+      "bank_id": "BNK-0032",
+      "ref": "RZP26000033",
+      "status": "unresolved",
+      "near_miss_candidate": "LGR-0056",
+      "near_miss_score": 0.03198,
+      "rejection_reason": "no ledger record found with matching reference; closest overall ledger candidate (LGR-0056) had no reference match at all",
+      "true_case": null
+    },
+    {
+      "ledger_id": "LGR-0032",
+      "bank_id": "BNK-0033",
+      "ref": "RZP26000034",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": "LGR-0033",
+      "bank_id": "BNK-0034",
+      "ref": "RZP26000035",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "timezone_shift"
+    },
+    {
+      "ledger_id": "LGR-0034",
+      "bank_id": "BNK-0035",
+      "ref": "RZP26000036",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0035",
+      "bank_id": "BNK-0036",
+      "ref": "RZP26000037",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 1.87,
+      "date_diff_days": 0,
+      "true_case": "rounding_noise"
+    },
+    {
+      "ledger_id": "LGR-0036",
+      "bank_id": null,
+      "ref": "RZP26000038",
+      "status": "unresolved",
+      "near_miss_candidate": "BNK-0037",
+      "near_miss_score": 0.2374,
+      "rejection_reason": "amount off by \u20b912,868.59 (33.9%) \u2014 outside tolerance",
+      "true_case": "partial_refund"
+    },
+    {
+      "ledger_id": null,
+      "bank_id": "BNK-0037",
+      "ref": "RZP26000038",
+      "status": "unresolved",
+      "near_miss_candidate": "LGR-0036",
+      "near_miss_score": 0.2374,
+      "rejection_reason": "amount off by \u20b912,868.59 (33.9%) \u2014 outside tolerance",
+      "true_case": null
+    },
+    {
+      "ledger_id": "LGR-0037",
+      "bank_id": [
+        "BNK-0039",
+        "BNK-0038"
+      ],
+      "ref": "RZP26000039",
+      "status": "matched",
+      "tier": "split_payment",
+      "amount_diff": 0.0,
+      "true_case": "split_payment"
+    },
+    {
+      "ledger_id": "LGR-0038",
+      "bank_id": "BNK-0040",
+      "ref": "RZP26000040",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 1.68,
+      "date_diff_days": 0,
+      "true_case": "rounding_noise"
+    },
+    {
+      "ledger_id": "LGR-0039",
+      "bank_id": null,
+      "ref": "RZP26000041",
+      "status": "unresolved",
+      "near_miss_candidate": "BNK-0044",
+      "near_miss_score": 0.04732,
+      "rejection_reason": "no bank record found with matching reference; closest overall bank candidate (BNK-0044) had no reference match at all",
+      "true_case": "orphan_ledger"
+    },
+    {
+      "ledger_id": "LGR-0040",
+      "bank_id": "BNK-0041",
+      "ref": "RZP26000042",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0041",
+      "bank_id": "BNK-0042",
+      "ref": "RZP26000043",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "timezone_shift"
+    },
+    {
+      "ledger_id": null,
+      "bank_id": "BNK-0043",
+      "ref": "RZP26000044",
+      "status": "unresolved",
+      "near_miss_candidate": "LGR-0051",
+      "near_miss_score": 0.73512,
+      "rejection_reason": "no ledger record found with matching reference; closest overall ledger candidate (LGR-0051) had no reference match at all",
+      "true_case": null
+    },
+    {
+      "ledger_id": "LGR-0042",
+      "bank_id": "BNK-0044",
+      "ref": "RZP26000045",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0043",
+      "bank_id": "BNK-0045",
+      "ref": "RZP26000046",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "date_drift"
+    },
+    {
+      "ledger_id": "LGR-0044",
+      "bank_id": "BNK-0046",
+      "ref": "RZP26000047",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.4,
+      "date_diff_days": 0,
+      "true_case": "rounding_noise"
+    },
+    {
+      "ledger_id": "LGR-0045",
+      "bank_id": "BNK-0047",
+      "ref": "RZP26000048",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0046",
+      "bank_id": "BNK-0048",
+      "ref": "RZP26000049",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 1.17,
+      "date_diff_days": 0,
+      "true_case": "rounding_noise"
+    },
+    {
+      "ledger_id": "LGR-0047",
+      "bank_id": null,
+      "ref": "RZP26000050",
+      "status": "unresolved",
+      "near_miss_candidate": "BNK-0049",
+      "near_miss_score": 0.33147,
+      "rejection_reason": "amount off by \u20b927,113.25 (47.4%) \u2014 outside tolerance",
+      "true_case": "partial_refund"
+    },
+    {
+      "ledger_id": null,
+      "bank_id": "BNK-0049",
+      "ref": "RZP26000050",
+      "status": "unresolved",
+      "near_miss_candidate": "LGR-0047",
+      "near_miss_score": 0.33147,
+      "rejection_reason": "amount off by \u20b927,113.25 (47.4%) \u2014 outside tolerance",
+      "true_case": null
+    },
+    {
+      "ledger_id": "LGR-0049",
+      "bank_id": "BNK-0051",
+      "ref": "RZP26000052",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": null,
+      "bank_id": "BNK-0052",
+      "ref": "RZP26000053",
+      "status": "unresolved",
+      "near_miss_candidate": "LGR-0029",
+      "near_miss_score": 0.20305,
+      "rejection_reason": "no ledger record found with matching reference; closest overall ledger candidate (LGR-0029) had no reference match at all",
+      "true_case": null
+    },
+    {
+      "ledger_id": "LGR-0050",
+      "bank_id": "BNK-0053",
+      "ref": "RZP26000054",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0051",
+      "bank_id": "BNK-0054",
+      "ref": "RZP26000055",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0052",
+      "bank_id": "BNK-0055",
+      "ref": "RZP26000056",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0053",
+      "bank_id": "BNK-0056",
+      "ref": "RZP26000057",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0054",
+      "bank_id": "BNK-0057",
+      "ref": "RZP26000058",
+      "status": "matched",
+      "tier": "fuzzy",
+      "amount_diff": 0.0,
+      "date_diff_days": 1,
+      "true_case": "timezone_shift"
+    },
+    {
+      "ledger_id": "LGR-0055",
+      "bank_id": "BNK-0058",
+      "ref": "RZP26000059",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0056",
+      "bank_id": "BNK-0059",
+      "ref": "RZP26000060",
+      "status": "matched",
+      "tier": "exact",
+      "amount_diff": 0.0,
+      "date_diff_days": 0,
+      "true_case": "exact"
+    },
+    {
+      "ledger_id": "LGR-0057",
+      "bank_id": [
+        "BNK-0060",
+        "BNK-0061"
+      ],
+      "ref": "RZP26000061",
+      "status": "matched",
+      "tier": "split_payment",
+      "amount_diff": 0.0,
+      "true_case": "split_payment"
+    }
+  ]
+}
