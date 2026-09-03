@@ -33,8 +33,7 @@ import json
 import re
 from datetime import datetime
 
-REF_PATTERN = re.compile(r"RZP26\d{6}")
-
+REF_PATTERN = re.compile(r"RZP26\s*(\d{6})", re.IGNORECASE)
 # Tolerances — deliberately explicit and named, never magic numbers buried
 # in the logic. A reviewer should be able to read these and agree/disagree.
 AMOUNT_ABS_TOLERANCE = 3.00       # rupees, covers rounding/FX noise
@@ -53,7 +52,7 @@ def parse_date(s):
 
 def extract_ref(narration):
     m = REF_PATTERN.search(narration)
-    return m.group(0) if m else None
+    return f"RZP26{m.group(1)}" if m else None
 
 
 def amount_ok(a, b):

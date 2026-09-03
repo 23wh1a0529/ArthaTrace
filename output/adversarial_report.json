@@ -1,0 +1,134 @@
+[
+  {
+    "name": "lowercase_ref_in_narration",
+    "expected": "should match \u2014 same ref, amount, date, just different letter case",
+    "crashed": false,
+    "results": [
+      {
+        "ledger_id": "LGR-A1",
+        "bank_id": "BNK-A1",
+        "ref": "RZP26000999",
+        "status": "matched",
+        "tier": "exact",
+        "amount_diff": 0.0,
+        "date_diff_days": 0,
+        "true_case": "adversarial"
+      }
+    ]
+  },
+  {
+    "name": "ref_broken_by_internal_spacing",
+    "expected": "should match \u2014 same underlying ref, just formatted with a space in the middle",
+    "crashed": false,
+    "results": [
+      {
+        "ledger_id": "LGR-A2",
+        "bank_id": "BNK-A2",
+        "ref": "RZP26000998",
+        "status": "matched",
+        "tier": "exact",
+        "amount_diff": 0.0,
+        "date_diff_days": 0,
+        "true_case": "adversarial"
+      }
+    ]
+  },
+  {
+    "name": "date_drift_exactly_at_boundary",
+    "expected": "should match \u2014 7 days is inside the stated tolerance, inclusive",
+    "crashed": false,
+    "results": [
+      {
+        "ledger_id": "LGR-A3",
+        "bank_id": "BNK-A3",
+        "ref": "RZP26000997",
+        "status": "matched",
+        "tier": "fuzzy",
+        "amount_diff": 0.0,
+        "date_diff_days": 7,
+        "true_case": "adversarial"
+      }
+    ]
+  },
+  {
+    "name": "date_drift_one_day_past_boundary",
+    "expected": "should be unresolved \u2014 8 days is outside the stated 7-day tolerance",
+    "crashed": false,
+    "results": [
+      {
+        "ledger_id": "LGR-A4",
+        "bank_id": null,
+        "ref": "RZP26000996",
+        "status": "unresolved",
+        "near_miss_candidate": "BNK-A4",
+        "near_miss_score": 0.08,
+        "rejection_reason": "date off by 8 days \u2014 outside 7-day settlement window",
+        "true_case": "adversarial"
+      },
+      {
+        "ledger_id": null,
+        "bank_id": "BNK-A4",
+        "ref": "RZP26000996",
+        "status": "unresolved",
+        "near_miss_candidate": "LGR-A4",
+        "near_miss_score": 0.08,
+        "rejection_reason": "date off by 8 days \u2014 outside 7-day settlement window",
+        "true_case": null
+      }
+    ]
+  },
+  {
+    "name": "zero_amount_transaction",
+    "expected": "should match without crashing \u2014 zero-value entries shouldn't break scoring math",
+    "crashed": false,
+    "results": [
+      {
+        "ledger_id": "LGR-A5",
+        "bank_id": "BNK-A5",
+        "ref": "RZP26000995",
+        "status": "matched",
+        "tier": "exact",
+        "amount_diff": 0.0,
+        "date_diff_days": 0,
+        "true_case": "adversarial"
+      }
+    ]
+  },
+  {
+    "name": "triple_duplicate_ref_bank_exhausted",
+    "expected": "2 of 3 ledger entries should resolve; the 3rd should be unresolved with a clear 'no candidate left' reason, not a crash",
+    "crashed": false,
+    "results": [
+      {
+        "ledger_id": "LGR-A6a",
+        "bank_id": "BNK-A6a",
+        "ref": "RZP26000994",
+        "status": "matched",
+        "tier": "duplicate_ref_resolved",
+        "amount_diff": 0.0,
+        "date_diff_days": 0,
+        "collision_flag": "reference 'RZP26000994' shared by 3 ledger entries \u2014 resolved by closest amount+date match, human review recommended",
+        "true_case": "adversarial"
+      },
+      {
+        "ledger_id": "LGR-A6b",
+        "bank_id": "BNK-A6b",
+        "ref": "RZP26000994",
+        "status": "matched",
+        "tier": "duplicate_ref_resolved",
+        "amount_diff": 0.0,
+        "date_diff_days": 0,
+        "collision_flag": "reference 'RZP26000994' shared by 3 ledger entries \u2014 resolved by closest amount+date match, human review recommended",
+        "true_case": "adversarial"
+      },
+      {
+        "ledger_id": "LGR-A6c",
+        "bank_id": null,
+        "ref": "RZP26000994",
+        "status": "unresolved",
+        "rejection_reason": "reference 'RZP26000994' collides across 3 ledger entries; no bank candidate left to assign after resolving the others",
+        "true_case": "adversarial"
+      }
+    ]
+  }
+]
