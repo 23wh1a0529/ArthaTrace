@@ -1,6 +1,19 @@
 {
-  "as_of_date": "2026-09-14",
-  "summary": {
+  "generated_at": "2026-09-14",
+  "match_summary": {
+    "total_ledger_records": 57,
+    "total_bank_records": 61,
+    "matched_count": 50,
+    "unresolved_count": 14,
+    "tier_breakdown": {
+      "split_payment": 4,
+      "exact": 24,
+      "fuzzy": 19,
+      "duplicate_ref_resolved": 3
+    },
+    "internal_accuracy_check": "54/57 (94.7%)"
+  },
+  "exception_summary": {
     "total_exceptions": 14,
     "total_amount_at_risk_inr": 561174.06,
     "total_cost_of_delay_inr": 4994.96,
@@ -327,5 +340,6 @@
       "near_miss_score": 0.03198,
       "llm_explanation": null
     }
-  ]
+  ],
+  "llm_explanation_note": "LLM explanations generated only for the top 5 costliest exceptions by design \u2014 see run_pipeline.py comments."
 }
